@@ -1,6 +1,6 @@
 # k8s
 
-Tarefas pendentes
+### Tarefas pendentes ###
 
 - subir um arquivo de guia de configurando o master basico - Pendente
 - subir um arquivo de guia de como adiciona nodes ao cluster - Pendente
@@ -17,3 +17,7 @@ Tarefas pendentes
 - subir exemplo de ConfigMap - Pendente
 - subir exemplo de InitContainer - Pendente
 - subir exemplo de VolumePersistent - Pendente
+
+### Tarefas done ###
+
+- subir yaml de exemplo, de alteração do /etc/hosts do deploy.
