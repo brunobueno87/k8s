@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: my-namespace
+  annotations:
+    opflex.cisco.com/endpoint-group: '{"tenant":"Tn_K8S_DEV_GT", "app-profile":"my-namesapace","name":"my-namespace"}'
+  labels:
+    app: nginx
+    component: api
+  name: api
+spec:
+  replicas: 1      
+  selector:
+    matchLabels:
+      component: api
+  template:
+    metadata:
+      labels:
+        app: api
+        component: api
+    spec:
+      containers:
+        - image: registry.da.sua.imagem/basel/nginx:1.0.0
+          name: nginx
+          ports:
+          - containerPort: 80
+            protocol: TCP
+          resources:
+            limits:
+              memory: "800Mi"
+              cpu: "800m"
+      hostAliases:
+      - ip: seu.ip.aqui
+        hostnames:
+        - seu.dns.aqui
