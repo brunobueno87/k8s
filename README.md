@@ -2,7 +2,7 @@
 
 ### Tarefas pendentes ###
 
-- subir um arquivo de guia de configurando o master basico - Pendente
+- subir um arquivo de guia de configurando o master - ok
 - subir um arquivo de guia de como adiciona nodes ao cluster - Pendente
 - subir um arquivo de guia de como configurar um multicluster - Pendente
 - subir um exemplo de deploy - Pendente
