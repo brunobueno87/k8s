@@ -1,5 +1,10 @@
 # k8s
 
+Neste repo você vai encontrar arquivos de roteiro, para subir um cluster k8s na unha.
+Vou tentar deixar os arquivos com o nome mais intuitivo possivel. Conforme eu for criando scripts irei segregar por diretórios com seus respectivos "readmes".
+
+Tmj e, é só o começo....
+
 ### Tarefas pendentes ###
 
 - subir um arquivo de guia de configurando o master - ok
