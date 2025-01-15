@@ -1,0 +1,6 @@
+Quando estiver enfrentando problemas de DNS pode ser que precise reiniciar o DNS do cluster;
+
+Reiniciar core DNS no cluster
+kubectl rollout restart deployment coredns -n kube-system
+
+
