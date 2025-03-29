@@ -1,5 +1,9 @@
 # Documentação dos Comandos para Configurar um Node Master no Kubernetes
 
+OBS; Estou partindo do ponto que você esta com uma maquina com os pre-rec minimos como descrito na doc;
+
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/#before-you-begin
+
 ## Descrição dos Comandos
 
 ### 1. Configurações Iniciais
