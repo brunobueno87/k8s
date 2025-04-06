@@ -24,9 +24,25 @@ Impede que o swap seja reativado automaticamente ao reiniciar o sistema.
 
 #### **Habilitar o encaminhamento de pacotes IPv4**
 ```bash
-sudo echo 1 > /proc/sys/net/ipv4/ip_forward
+sudo echo 1 | /proc/sys/net/ipv4/ip_forward
 ```
 Habilita o encaminhamento de pacotes IPv4 para permitir comunicação entre pods.
+
+
+#### **Caso queira deixar a mudança permanentemente no seu worker
+```bash
+sudo vim /etc/sysctl.conf
+```
+
+E adicione ou edite, se já existir:
+```bash
+net.ipv4.ip_forward=1
+```
+
+Depois aplica sem reiniciar com:
+```bash
+sudo sysctl -p
+```
 
 ### 2. Configurar módulos do kernel
 
